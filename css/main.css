@@ -30,152 +30,8 @@ html {
     background: #b3d4fc;
     text-shadow: none;
 }
-.carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-.footer-item
-{
-    color:gray;
-    font-size:13px;
-}
-h6{
-    color:black;
-}
-.carousel-item img {
-    max-width:100%;
-}
-.nav-pills .nav-item {
-    width:100px;
-    font-size:10px;
-    height:25px;
-    border: 0.5px solid gray;
-    color:gray;
-    border-radius:12px;
-    margin:15px;
-    padding:5px;
-}
-#pills li .nav-item .active {
-    border:0.5px solid #0aalbc;
-    border-radius:12px;
-}
-.newarrival {
-    margin:15px;
-    height:50%;
-    width:30%;
-    display:inline-block;
-}
-.price{
-    margin: 10% 20%;
-    display:block;
-    color:black;
-    font-weight:bold;
-    font-size:12px;
-    height:15%;
-    width:50%;
-    padding:5px;
-}
-.price strike
-{
-    color:gray;
-    opacity:0.5;
-}
-.btntxt
-{
-    margin: 10% 20%;
-    display:block;
-    color:black;
-    height:15%;
-    width:50%;
-    font-weight:bold;
-    padding:5px;
-    font-size:15px;
-}
-.btns {
-    margin: 10% 15%;
-    display:block;
-    color:white;
-    background-color:#0aa1bc;
-    height:15%;
-    width:50%;
-    font-weight:bold;
-    padding:5px;
-    font-size:10px;
 
-}
-.blog {
-    clear:both;
-    position:relative;
-    text-align:center;
-    color:white;
-}
-.container .newarrival img{
-    width:80%;
-    height:70%;
-}
-.new {
-    width: 300px;
-    height: 63px;
-    font-family: Dekko;
-    font-size: 45px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.42;
-    letter-spacing: 4.5px;
-    margin-left:auto;
-    margin-right:auto;
-    color: #000000;
-}
-.text-block {
-    position: absolute;
-    bottom: 200px;
-    right: auto;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 300px;
-    height: 50px;
-    font-family: Dekko;
-    font-size: 30px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    text-align: left;
-}
-.insta-icon {
-    position:absolute;
-    top:50%;
-    left:43%;
-    font-size:20px;
-    font-weight:bold;
-}
-.insta-background {
-    height:40%;
-    width:100%;
-    margin-top:10%;
-}
-.instagram {
-    margin-top:10%;
-    clear:both;
-    padding:50px;
-    position: relative;
-    text-align: center;
-    color: black;
-}
-.blog-caption {
-    position:absolute;
-    bottom:2%;
-    left:20%;
-    right:20%;
-    align:center;
-}
-li{
-    margin:5px;
-}
+
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -184,105 +40,12 @@ li{
 /*
  * A better looking default horizontal rule
  */
-.main-nav {
-    font-weight:bold;
-    font-size:14px;
-}
-.best-sell {
-    background-color:#fafafa;
-}
-.new-items {
-    clear:both;
-    padding:50px;
-}
-.container .display {
-    clear:both;
-    display:inline-block
 
-}
-.item-text {
 
-    font-size:25px;
-    font-family:Dekko;
-    font-weight:bold;
-    height:10%;
-    width:20%;
-    float:right;
-    margin-right:15%;
-    margin-top:5%;
-    color:#0aa1bc;
-}
-.page {
-    width: 121.7px;
-    height: 40px;
-    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.08);
-    border: solid 2px #0aa1bc;
-    color:#0aa1bc;
-}
-.pagination {
-    font-size:16px;
-    color:white;
-    font-weight:normal;
-}
-.item-img {
-    height:10%;
-    width:10%;
-    margin-right:auto;
-}
-.item-text p {
-    font-size:15px;
-    color:black;
-    margin-left:auto;
-}
-.best-item {
-    height:10%;
-    width:20%;
-    margin-top:10%;
-    float:right;
-    margin-right:20%;
-}
-.best-sell h3 {
-    margin-top:10%;
-    text-align: center;
-}
-.best-sell-item {
-    float:left;
-    height:50%;
-    width:50%;
-    margin-right:auto;
-    margin-top:10%;
-}
-.add {
-    height:30px;
-    width:100px;
-    background-color:#0aalbc;
-    color:white;
-    padding:3px;
-}
-.carousel-caption{
-    font-size:15px;
-}
-.dc {
-    color:black;
-    font-size: 20px;
-}
-.search {
-    height:30px;
-    width:70px;
-    font-size:13px;
-    text-align: center;
-}
-.navbar-field {
-    height:30px;
-    width:130px;
-}
-.products {
-    width:80px;
- }
-.product-img {
-    height:30px;
-    width:60px;
-}
+
+
+
+
 hr {
     display: block;
     height: 1px;
@@ -442,8 +205,36 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
+
+}
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+}
+@media only screen and (max-width:768px) {
+    .footer-button {
+        font-size:8px;
+        border-radius:20px;
+    }
+    .text-block {
+        position: absolute;
+        bottom: 80px;
+        right: auto;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family:Dekko;
+        font-weight: normal;
+        font-size:20px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.41;
+        letter-spacing: normal;
+        text-align: left;
+    }
+    .carousel-caption {
+        font-size:10px;
+        margin-left:11%;
+    }
 }
 
 @media print,
