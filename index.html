@@ -19,7 +19,7 @@
 <body>
   <header>
     <div class="container">
-      <div class="navbar navbar-expand-sm bg-light navbar-light shadow-sm main-nav">
+      <nav class="navbar navbar-expand-sm bg-light navbar-light shadow-sm main-nav">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
             <img class="navbar-logo" src="logo.png">
@@ -69,7 +69,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </nav>
       <div id="items" style="display:none;">
         <div class="navbar navbar-expand-sm bg-light navbar-light products-nav">
           <ul class="navbar-nav">
@@ -105,7 +105,8 @@
 
   <main>
     <div class="container">
-      <div id="demo" class="carousel slide" data-ride="carousel">
+      <section>
+        <div id="demo" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
           <li  data-target="#demo" data-slide-to="0" class="active"></li>
           <li data-target="#demo" data-slide-to="1"></li>
@@ -116,7 +117,7 @@
               <source media="(max-width: 650px)" srcset="img/header_image.png">
               <img src="img/header_image@2x.png">
             </picture>
-            <div class="text-block">
+            <div class="dc-inverter">
               DC Inverter
               <div class="carousel-heading">
                 Ice Energy
@@ -135,7 +136,7 @@
           </div>
           <div class="carousel-item carousel-blog">
             <img src="img/blog.jpeg"  height="500" alt="image">
-            <div class="text-block">
+            <div class="dc-inverter">
               DC Inverter
               <div class="carousel-heading">
                 Ice Energy
@@ -144,7 +145,7 @@
                 $500
               </div>
               <div>
-                <button class="btn btn-primary add">Add To Cart</button>
+                <button class="btn btn-primary">Add To Cart</button>
               </div>
             </div>
             <div class="carousel-caption">
@@ -154,229 +155,555 @@
           </div>
         </div>
       </div>
-      <br/>
-      <div class="best-sell">
-        <div>
-          <h3 class="new-heading">
-            Best Sell
-          </h3>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-12">
-            <div>
-              <img class="best-sell-item" src="img/img2@2x.png">
-            </div>
+        <br/>
+        <div class="best-sell">
+          <div>
+            <h3 class="new-heading">
+              Best Sell
+            </h3>
           </div>
-          <div class="col-md-4 col-12">
-            <figure>
-              <img src="img/img2.png">
-              <figcaption class="best-item-text justify-content-center">
-                DC Inverter
-                <br/>
-                <p><img class="item-icon" src="img/ice.svg">&nbsp Ice Energy </p>
-                <p><img class="item-icon" src="img/tag.svg">&nbsp $500 </p>
-                <ul class="pagination">
-                  <li><button class="btn no-border-radius inc_dec" id="minus">-</button></li>
-                  <li>
-                    <input class="no-border-radius inc_dec" type="number" id="quantity" name="quantity" value="1" style="width:40px;  height:40px; text-align:center;"></input>
-                  </li>
-                  <li><button id="plus" class="btn no-border-radius inc_dec">+</button></li>
-                  <li class="btn add-to-cart"  > Add to Cart</li>
-                </ul>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <div class="newarrival">
-        <h4 class="new-heading">New Arrivals</h4>
-        <nav class="navbar navbar-expand-sm shadow-sm new-arrivals-navbar justify-content-center">
-          <ul id="pills" class="navbar-nav nav-pills">
-            <li class="nav-item active">
-              <a id="ac" class="links" data-showdiv="airconditioners">
-                Air Conditioner
-              </a>
-            </li>
-            <li class="nav-item">
-              <a id="refs" class="links" data-showdiv="refrigerators">
-                Refrigerators
-              </a>
-            </li>
-            <li class="nav-item">
-              <a>
-                LED TVs
-              </a>
-            </li>
-            <li class="nav-item">
-              <a>
-                Microwave Oven
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div id="airconditioners" class="items">
-          <div class="row pt-3">
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-12">
               <div>
-                <div class="new-item-description">
-                  DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
+                <img class="best-sell-item" src="img/img2@2x.png">
               </div>
             </div>
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
-              <div>
-                <div class="new-item-description">
+            <div class="col-md-4 col-12">
+              <figure>
+                <img src="img/img2.png">
+                <figcaption class="best-item-text justify-content-center">
                   DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
-              </div>
-            </div>
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
-              <div>
-                <div class="new-item-description">
-                  DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="row pt-3">
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
-              <div>
-                <div class="new-item-description">
-                  DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
-              </div>
-            </div>
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
-              <div>
-                <div class="new-item-description">
-                  DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
-              </div>
-            </div>
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
-              <div>
-                <div class="new-item-description">
-                  DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="row pt-3">
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
-              <div>
-                <div class="new-item-description">
-                  DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
-              </div>
-            </div>
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
-              <div>
-                <div class="new-item-description">
-                  DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
-              </div>
-            </div>
-            <div class="col-md-4 col-12 col-sm-6 new-items">
-              <div class="items-img pt-5 pb-5">
-                <img src="img/airconditioner3.png">
-              </div>
-              <div>
-                <div class="new-item-description">
-                  DC Inverter
-                  <div class="price">
-                    <strike>$1500</strike>
-                    &nbsp &nbsp $500
-                  </div>
-                </div>
-                <button class="btn btn-default new-items-btn mt-4">
-                  Add  To Cart
-                </button>
-              </div>
+                  <br/>
+                  <p><img class="item-icon" src="img/ice.svg">&nbsp Ice Energy </p>
+                  <p><img class="item-icon" src="img/tag.svg">&nbsp $500 </p>
+                  <ul class="pagination">
+                    <li><button class="btn no-border-radius inc_dec" id="minus">-</button></li>
+                    <li>
+                      <input class="no-border-radius inc_dec" type="number" id="quantity" name="quantity" value="1" style="width:40px;  height:40px; text-align:center;"></input>
+                    </li>
+                    <li><button id="plus" class="btn no-border-radius inc_dec">+</button></li>
+                    <li class="btn add-to-cart"  > Add to Cart</li>
+                  </ul>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
-      </div>
-      <div class="blog mt-5">
+      </section>
+      <section>
+        <div class="newarrival">
+          <h4 class="new-heading">New Arrivals</h4>
+          <nav class="navbar navbar-expand-sm shadow-sm new-arrivals-navbar justify-content-center">
+            <ul id="pills" class="navbar-nav nav-pills">
+              <li class="nav-item active">
+                <a id="ac" class="links" data-showdiv="airconditioners">
+                  Air Conditioner
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="refs" class="links" data-showdiv="refrigerators">
+                  Refrigerators
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="ledtv" class="links" data-showdiv="leds">
+                  LED TVs
+                </a>
+              </li>
+              <li class="nav-item">
+                <a>
+                  Microwave Oven
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div id="airconditioners" class="items">
+            <div class="row pt-3">
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            </div>
+            <div class="row pt-3">
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            </div>
+            <div class="row pt-3">
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/airconditioner3.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  DC Inverter
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div id="leds" class="items" style="display:none;">
+            <div class="row pt-3">
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            </div>
+            <div class="row pt-3">
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            </div>
+            <div class="row pt-3">
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+              <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/led@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  LED TV
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div id="refrigerators" class="items" style="display:none;">
+            <div class="row pt-3">
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+            <div class="row pt-3">
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+            <div class="row pt-3">
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 col-sm-6 new-items">
+              <div class="items-img pt-5 pb-5">
+                <img src="img/refrigerator@2x.png">
+              </div>
+              <div>
+                <div class="item-description">
+                  Refrigerator
+                  <div class="price">
+                    <strike>$1500</strike>
+                    &nbsp &nbsp $500
+                  </div>
+                </div>
+                <button class="btn btn-default items-btn mt-4">
+                  Add  To Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="blog mt-5">
         <img src="img/blog.jpeg" style="max-width:100%;" >
         <div class="blog-caption">
           We welcome you to the world of limitless appliances that are ready to adore your home & workplace
@@ -386,15 +713,18 @@
           <button class="btn btn-default blog-btn">BLOG</button>
         </div>
       </div>
-      <div class="instagram mt-5">
-        <h4 class="new-heading mt-2">Instagram</h4>
-        <img class="insta-background mt-5" src="img/instagram.jpg">
-        <p class="btn-floating btn-instagram mx-1 insta-icon">
-          <i class="fa fa-instagram fa-3x"> </i>
-          <br/>
-          SHOP OUR INSTAGRAM
-        </p>
-      </div>
+      </section>
+      <section>
+        <div class="instagram mt-5">
+          <h4 class="new-heading mt-2">Instagram</h4>
+          <img class="insta-background mt-5" src="img/instagram.jpg">
+          <p class="btn-floating btn-instagram mx-1 insta-icon">
+            <i class="fa fa-instagram fa-3x"> </i>
+            <br/>
+              SHOP OUR INSTAGRAM
+          </p>
+        </div>
+      </section>
     </div>
   </main>
 
