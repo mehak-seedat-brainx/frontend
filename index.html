@@ -500,31 +500,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script>
-      $(document).ready(function() {
-          $("#products").hover(function () {
-              document.getElementById("items").style.display = 'block';
-          });
-          $("#items").click(function () {
-              document.getElementById("items").style.display = 'none';
-          });
-          $("#minus").click(function () {
-              var qty=$('#quantity').val();
-              if(qty>1) {
-                  document.getElementById("quantity").stepDown(1);
-              }
-          });
-          $("#plus").click(function () {
-              document.getElementById("quantity").stepUp(1);
-          });
-          $(".links").click(function() {
-              $(".items:visible").hide();
-              $("#"+$(this).attr("data-showdiv")).show();
-          });
-      });
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
+  <script src="js/index.js"></script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
