@@ -1,3 +1,25 @@
+/* navbar */
+.main-nav {
+    font-weight:bold;
+    font-size:14px;
+}
+.main-nav li {
+    margin:4px;
+}
+.navbar-logo {
+    width:100px;
+}
+.products-nav {
+    text-align: center;
+    font-size:10px;
+    font-weight:bold;
+}
+.product-img {
+    height:30px;
+    width:60px;
+}
+
+
 /* general */
 
 
@@ -27,8 +49,9 @@
 
 /* footer */
 
-.footer {
+.footer-container {
     clear:both;
+    border-top: 1px solid lightgray
 }
 .footer-item
 {
@@ -39,15 +62,14 @@
     margin-left: 10px;
     background-color:#0aa1bc;
     color:white;
-    font-size:10px;
+    font-size:11px;
     border-radius:20px;
-    padding:4px;
-    width:100px;
+    text-align:center;
+    padding:10px;
 }
 .subscribe-email {
     border-color:white;
     font-size:11px;
-    padding:20px;
     text-align:center;
     border-radius:20px;
 }

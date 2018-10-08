@@ -74,18 +74,6 @@
 }
 /* new arrivals */
 
-.new-items {
-    clear:both;
-    padding:50px;
-}
-.item-text {
-    font-size:25px;
-    font-family:Dekko;
-    font-weight:bold;
-    color:#0aa1bc;
-    text-align:center;
-
-}
 .nav-pills .nav-item {
     width:100px;
     font-size:10px;
@@ -96,15 +84,27 @@
     margin:15px;
     padding:5px;
 }
-.active {
-    border-color:#0aa1bc;
-}
-#pills li .nav-item .active {
-    border:0.5px solid #0aa1bc;
-    border-radius:12px;
-}
 .newarrival {
+    clear:both;
+    padding:50px;
+}
+.new-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 40vh;
     display:inline-block;
+}
+.item-text {
+    font-size:25px;
+    font-family:Dekko;
+    font-weight:bold;
+    color:#0aa1bc;
+    text-align:center;
+}
+.items-img:hover {
+    border: 10px solid silver;
 }
 .price {
     font-size:13px;
@@ -120,23 +120,15 @@
     font-size:15px;
     align-right:20px;
 }
-.new-items .row {
-    margin-left:60px;
-}
 .new-items-btn {
-
-    display:block;
     color:white;
     background-color:#0aa1bc;
-    height:15%;
-    width:50%;
     font-weight:bold;
-    padding:5px;
+    padding:7px 30px;
     font-size:10px;
 }
 .container .newarrival img{
     width:200px;
-
 }
 .new-heading{
     width: 300px;
