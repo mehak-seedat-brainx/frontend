@@ -3,7 +3,6 @@
 .dc-inverter {
     position: absolute;
     bottom: 100px;
-    right: auto;
     color: white;
     padding-left: 20px;
     font-family: Dekko;
@@ -16,13 +15,7 @@
 }
 .carousel-item img {
     max-width:100%;
-}
-.carousel-blog {
-    color:black;
-}
-.carousel-blog img {
-    width:100%;
-    max-width:100%;
+    min-height:100%;
 }
 .carousel-caption{
     font-size:15px;
@@ -34,13 +27,8 @@
 
 /* best sell */
 
-
-.best-sell {
-    background-color:#fafafa;
-}
 .item-icon {
     width:20px;
-    margin-right:auto;
 }
 .best-sell h3 {
     margin-top:10%;
@@ -70,11 +58,13 @@
     font-weight:bold;
     color:#0aa1bc;
     text-align:center;
-
 }
 /* new arrivals */
 
-.nav-pills > li.active  {
+.nav-pills .nav-item:hover{
+    border-color:#0aa1bc;
+}
+.nav-pills > li.active {
     border-color:#0aa1bc;
     color:#0aa1bc;
 }
@@ -82,7 +72,7 @@
     width:100px;
     font-size:10px;
     height:25px;
-    border: 0.5px solid gray;
+    border:0.5px solid gray;
     color:gray;
     border-radius:12px;
     margin:15px;
@@ -91,6 +81,9 @@
 .newarrival {
     clear:both;
     padding:50px;
+}
+#pills a {
+    cursor:pointer;
 }
 
 .item-text {
@@ -130,13 +123,14 @@
     bottom:2%;
     left:20%;
     right:20%;
-    align:center;
+    text-align:center;
+    color:black;
+    font-size:20px;
 }
 .blog-btn {
     background:transparent;
     color:white;
     border: 4px solid white;
-    width:160px;
 }
 
 /* instagram */
@@ -156,8 +150,9 @@
     position:absolute;
     top:50%;
     left:43%;
-    font-size:20px;
     font-weight:bold;
+    text-align:center;
+    font-size:20px;
 }
 
 
@@ -165,13 +160,46 @@
 Style adjustments for smaller screens
  */
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right:0;
+        margin-left:0;
+    }
     .carousel-caption {
-        font-size:10px;
-        margin-left:11%;
+        font-size:12px;
+        text-align:center;
     }
     .insta-icon {
+        text-align:center;
         font-size:15px;
+        left:30%;
+    }
+    .blog-caption
+    {
+        font-size:14px;
+        text-align:center;
+        color:black;
+    }
+    .carousel-caption {
+        font-size:12px;
+        text-align:right;
+    }
+    .dc-inverter {
+        font-size:14px;
+        text-align: left;
+        justify-content: start;
+        color:black;
+        bottom:10px;
 
     }
+    .carousel-heading {
+        font-size:14px;
+    }
+    .dc-inverter .btn {
+        padding:4px;
+        font-size:14px;
+    }
+
 }

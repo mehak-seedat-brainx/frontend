@@ -16,7 +16,16 @@ $(document).ready(function() {
     });
     $(".links").click(function() {
         $(".items:visible").hide();
-        $("#"+$(this).attr("data-showdiv")).show();
+        $("#"+$(this).attr("data-showdiv")).show(100);
+        $('#pills.nav-pills li.active').removeClass('active')
+        $(this).addClass('active');
+    });
+    $("#all-items").click(function() {
+        $(".items:visible").hide();
+        $(".items:hidden").show(100);
+        $(".empty").hide();
+        $('#pills.nav-pills li.active').removeClass('active')
+        $(this).addClass('active');
     });
 });
 window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
