@@ -8,7 +8,7 @@ $('.slider-for').slick({
 });
 $('.slider-nav').slick({
     slidesToShow: 3,
-    slidesToScroll: 0,
+    slidesToScroll: 3,
     asNavFor: '.slider-for',
     dots: false,
     centerMode: true,
@@ -17,9 +17,12 @@ $('.slider-nav').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow:3,
+                slidesToShow: 1,
                 slidesToScroll: 0,
             }
         }
     ]
+});
+document.querySelectorAll('.slick-center + .slick-cloned').forEach((next) => {
+    next.style.display='none';
 });
