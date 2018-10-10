@@ -5,6 +5,7 @@
 }
 .main-nav li {
     margin:2px;
+    cursor:pointer;
 }
 .navbar-logo {
     width:100px;
