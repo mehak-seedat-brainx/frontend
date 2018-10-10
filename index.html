@@ -30,13 +30,26 @@
         </div>
         <div class="navbar-header pull-right d-md-none">
           <a href="#">
-            <img src="img/cart.svg" style="width:40px;">
+            <img src="img/cart.svg" style="width:20px;">
           </a>
         </div>
         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
           <ul class="navbar-nav">
-            <li id="products" class="nav-item">
-              <a class="nav-link active" href="#">Products</a>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown">
+                  Products
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="products.html">Air Conditioners</a>
+                  <a class="dropdown-item" href="#">Refrigerators</a>
+                  <a class="dropdown-item" href="#">LED TVs</a>
+                  <a class="dropdown-item" href="#">Microwave Ovens</a>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Technology</a>
@@ -131,12 +144,11 @@
                   $500
                 </div>
                 <div>
-                  <button class="btn btn-primary">Add To Cart</button>
+                  <button class="btn btn-info">Add To Cart</button>
                 </div>
               </div>
               <div class="carousel-caption">
-                We welcome you to the world of limitless appliances that are ready to adore your home & workplace
-                with their existence. Orient strives to make your life simpler and luxurious with their state-of-the-art electronics.
+                We welcome you to the world of limitless appliances that are ready to adore your home.
               </div>
             </div>
             <div class="carousel-item">
@@ -150,12 +162,11 @@
                   $500
                 </div>
                 <div>
-                  <button class="btn btn-primary">Add To Cart</button>
+                  <button class="btn btn-info">Add To Cart</button>
                 </div>
               </div>
               <div class="carousel-caption">
-                We welcome you to the world of limitless appliances that are ready to adore your home & workplace
-                with their existence. Orient strives to make your life simpler and luxurious with their state-of-the-art electronics.
+                We welcome you to the world of limitless appliances that are ready to adore your home.
               </div>
             </div>
           </div>
@@ -188,7 +199,7 @@
                       <input class="no-border-radius inc_dec" type="number" id="quantity" name="quantity" value="1" style="width:40px;  height:40px; text-align:center;"></input>
                     </li>
                     <li><button id="plus" class="btn no-border-radius inc_dec">+</button></li>
-                    <li class="btn add-to-cart"  > Add to Cart</li>
+                    <li class="btn btn-outline-info add-to-cart"  > Add to Cart</li>
                   </ul>
                 </figcaption>
               </figure>
@@ -716,7 +727,7 @@
       </section>
       <section>
         <div class="blog mt-5">
-        <img src="img/blog.jpeg" style="max-width:100%;" >
+        <img class="responsive-img" src="img/blog.jpeg">
         <div class="blog-caption">
           We welcome you to the world of limitless appliances that are ready to adore your home & workplace
           with their existence. Orient strives to make your life simpler and luxurious with their state-of-the-art electronics.
@@ -728,13 +739,13 @@
       </section>
       <section>
         <div class="instagram mt-5">
-          <h4 class="new-heading mt-2">Instagram</h4>
-          <img class="insta-background mt-5" src="img/instagram.jpg">
-          <p class="btn-floating btn-instagram mx-1 insta-icon">
+          <h4 class="new-heading mt-3">Instagram</h4>
+          <img class="responsive-img" src="img/instagram.jpg" >
+          <div class="btn-floating btn-instagram mx-1 insta-caption justify-content-center" style="width:100%;">
             <i class="fa fa-instagram fa-3x"> </i>
             <br/>
-              SHOP OUR INSTAGRAM
-          </p>
+            SHOP OUR INSTAGRAM
+          </div>
         </div>
       </section>
     </div>
@@ -742,8 +753,9 @@
 
   <footer class="page-footer font-small">
     <div class="container footer-container">
-      <div class="text-center text-md-left py-5 px-2">
+      <div class="text-center text-md-left py-3 px-3">
         <div class="row">
+          <hr class="clearfix w-100 d-md-none">
           <div class="col-md-3 mx-auto">
             <h6 class="font-weight-bold mt-3 mb-4" >Technology</h6>
             <ul class="list-unstyled">

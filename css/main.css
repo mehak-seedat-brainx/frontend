@@ -210,32 +210,6 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-@media only screen and (max-width:768px) {
-    .footer-button {
-        font-size:8px;
-        border-radius:20px;
-    }
-    .text-block {
-        position: absolute;
-        bottom: 80px;
-        right: auto;
-        color: white;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-family:Dekko;
-        font-weight: normal;
-        font-size:20px;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.41;
-        letter-spacing: normal;
-        text-align: left;
-    }
-    .carousel-caption {
-        font-size:10px;
-        margin-left:11%;
-    }
-}
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),

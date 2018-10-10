@@ -2,9 +2,9 @@
 
 .dc-inverter {
     position: absolute;
-    bottom: 100px;
+    bottom: 20px;
     color: white;
-    padding-left: 20px;
+    text-align:center;
     font-family: Dekko;
     font-size: 30px;
 }
@@ -82,7 +82,7 @@
     clear:both;
     padding:50px;
 }
-#pills a {
+#pills li {
     cursor:pointer;
 }
 
@@ -140,16 +140,17 @@
 }
 .instagram {
     clear:both;
-    padding:50px;
-    position: relative;
-    text-align: center;
-    color: black;
+    position:relative;
+    text-align:center;
+    color:black;
+    max-width:100%;
 }
 
-.insta-icon {
+.insta-caption {
     position:absolute;
+    left:auto;
+    right:auto;
     top:50%;
-    left:43%;
     font-weight:bold;
     text-align:center;
     font-size:20px;
@@ -171,11 +172,6 @@ Style adjustments for smaller screens
         font-size:12px;
         text-align:center;
     }
-    .insta-icon {
-        text-align:center;
-        font-size:15px;
-        left:30%;
-    }
     .blog-caption
     {
         font-size:14px;
@@ -184,22 +180,24 @@ Style adjustments for smaller screens
     }
     .carousel-caption {
         font-size:12px;
-        text-align:right;
+        text-align:center;
     }
     .dc-inverter {
-        font-size:14px;
-        text-align: left;
-        justify-content: start;
+        font-size:12px;
+        justify-content:center;
+        text-align: center;
         color:black;
-        bottom:10px;
+        top:0px;
 
     }
     .carousel-heading {
         font-size:14px;
     }
     .dc-inverter .btn {
-        padding:4px;
-        font-size:14px;
+        padding:2px 4px;
+        font-size:12px;
     }
-
+    .insta-caption {
+        font-size:12px;
+    }
 }
